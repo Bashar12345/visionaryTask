@@ -1,0 +1,61 @@
+# REST_FRAMEWORK = {
+#     "DEFAULT_AUTHENTICATION_CLASSES": (
+#         "rest_framework.authentication.SessionAuthentication",
+#         "rest_framework.authentication.BasicAuthentication",
+#     ),
+#     "DEFAULT_PERMISSION_CLASSES": ("rest_framework.permissions.IsAuthenticated",),
+# }
+
+
+
+
+# Movie Rating API
+
+## Overview
+This is a RESTful API for rating movies. Users can rate movies and search for movies by name.
+
+## Technology Stack
+- Language: Python
+- Framework: Django, Django REST Framework
+- Database: SQLite
+
+## Setup Instructions
+1. Clone the repository:
+
+```bash
+git clone <repository_url>
+```
+
+2. Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+3. Run database migrations:
+
+```bash
+python manage.py migrate
+```
+
+4. Start the development server:
+
+```bash
+python manage.py runserver
+```
+
+## Assumptions
+- Users need to be authenticated to rate movies.
+- The rating value should be an integer between 1 and 5.
+- Search functionality searches for movies by name only.
+
+## Problems Faced
+- Some challenges were encountered while implementing the authentication system.
+
+## Progress
+- Implemented CRUD functionality for ratings.
+- Implemented search functionality to search for movies by name.
+
+## Future Improvements
+- Integrate social media sharing features.
+- Implement user profile customization options.
